@@ -1,5 +1,5 @@
 import {SafeAreaView, Text, Button} from 'react-native';
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useState} from 'react';
 
 const Screen3 = ({route, navigation}) => {
   const {counterVal} = route.params;
