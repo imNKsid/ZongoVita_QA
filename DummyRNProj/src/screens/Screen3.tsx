@@ -5,16 +5,6 @@ const Screen3 = ({route, navigation}) => {
   const {counterVal} = route.params;
   const [counter, setCounter] = useState(counterVal);
 
-  useEffect(() => {
-    const unsubscribe = navigation.addListener('blur', () => {
-      setCounter(counterVal);
-    });
-
-    return () => {
-      unsubscribe();
-    };
-  }, [navigation]);
-
   return (
     <SafeAreaView>
       <Text>Screen3</Text>
